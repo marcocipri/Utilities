@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function openWindowBingoOrig(bingoUrl) {
+            var myWindow = window.open(bingoUrl, "myWindowOrig", "width=1094,height=648");
+        }
+
+        function openWindowBingoTest(bingoUrl) {
+            var res = bingoUrl.replace(/bingo-gd2-pre/g, "bingo-gd2-mgames");
+            var myWindow = window.open(res, "myWindowTest", "width=1094,height=648");
+            var myWindow = window.open(res, "myWindowTest", "width=1094,height=648");
+        }
+    </script>
+    <h4>insert opening url</h4>
+    <input name="username" id="bingoUrl" type="text" size="70" />
+    </br>
+</head>
+
+<body>
+    <button onclick="openWindowBingoOrig(document.getElementById('bingoUrl').value);">openOrig</button></br>
+
+    <button onclick="openWindowBingoTest(document.getElementById('bingoUrl').value);">openTest</button></br>
+
+</body>
+
+</html>
