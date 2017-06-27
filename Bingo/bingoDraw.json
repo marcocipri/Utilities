@@ -1,0 +1,12 @@
+{
+    "call": {
+        "eventId": 10000,
+        "callNumber": 10,
+        "number": 20,
+        "prizes": [{
+            "winners": ["nick1", "nick2", "nick3"],
+            "amount": 1000,
+            "type": "fiveinarow"
+        }]
+    }
+}
